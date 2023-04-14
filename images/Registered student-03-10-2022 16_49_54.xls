@@ -1,0 +1,70 @@
+<table class="table">
+                   <thead>
+                       <tr>
+                       <th>No</th>
+                       <th>Reg number</th>
+                       <th>Name</th>
+                       <th>ID number</th>
+                       <th>Gender</th>
+                       <th>Course</th>
+                       <th>School</th>
+                       <th>Campus</th>
+                       <th>Phone number</th>
+                       <th>Registration Date</th>
+                       <th>County</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+            <tr>
+                <td>1</td>
+                <td>CB09/00012/20</td>
+                <td>Edwin Ochinga Nyagaya</td>
+                <td>26889876</td>
+                <td>Male</td>
+                <td>SOFTWARE</td>
+                <td>SCHOOL</td>
+                <td>Main</td>
+                <td>790789799</td>
+                <td>2022-10-03</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CB09/00013/20</td>
+                <td>Edwin Ochinga Nyagaya</td>
+                <td>26889876</td>
+                <td>Male</td>
+                <td>SOFTWARE</td>
+                <td>SCHOOL</td>
+                <td>Main</td>
+                <td>790789799</td>
+                <td>2022-10-03</td>
+                <td>Uganda</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>IN14/00001/23</td>
+                <td>Michael Onyango Owino</td>
+                <td>6578903</td>
+                <td>male</td>
+                <td>COMPUTER</td>
+                <td>SCHOOL</td>
+                <td>Main</td>
+                <td>790876526</td>
+                <td>2022-10-03</td>
+                <td>Kenya</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>IN54/0087/22</td>
+                <td>JOAN ATIENO MARENYA</td>
+                <td>32547898</td>
+                <td>Female</td>
+                <td>INFORMATION</td>
+                <td>SCHOOL</td>
+                <td>Main</td>
+                <td>734251708</td>
+                <td>2022-10-03</td>
+                <td>KENYA</td>
+            </tr>  </tbody>
+                    </table>

@@ -1,0 +1,61 @@
+import 'package:firebase_database/firebase_database.dart';
+
+// Define the student class
+class Student {
+  String key;
+  String name;
+  String email;
+  String phoneNumber;
+  String town;
+
+  Student({this.key, this.name, this.email, this.phoneNumber, this.town});
+
+  // Map the student object to a JSON object
+  Map<String, dynamic> toJson() {
+    return {
+      "name": name,
+      "email": email,
+      "phoneNumber": phoneNumber,
+      "town": town
+    };
+  }
+}
+
+// Create a Firebase reference
+final DatabaseReference databaseReference =
+    FirebaseDatabase.instance.reference().child('students');
+
+// Add a new student to the database
+Future<void> addStudent(Student student) async {
+  await databaseReference.push().set(student.toJson());
+}
+
+// Retrieve all students from the database
+Stream<List<Student>> getAllStudents() {
+  return databaseReference.onValue.map((event) {
+    List<Student> students = [];
+    if (event.snapshot.value != null) {
+      event.snapshot.value.forEach((key, value) {
+        Student student = Student(
+            key: key,
+            name: value['name'],
+            email: value['email'],
+            phoneNumber: value['phoneNumber'],
+            town: value['town']);
+        students.add(student);
+      });
+    }
+    return students;
+  });
+}
+
+// Update an existing student in the database
+Future<void> updateStudent(Student student) async {
+  await databaseReference.child(student.key).update(student.toJson());
+}
+
+// Delete a student from the database
+Future<void> deleteStudent(Student student) async {
+  await databaseReference.child(student.key).remove();
+}
+

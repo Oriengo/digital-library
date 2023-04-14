@@ -1,0 +1,11 @@
+UserId,password,Role,account
+administrator,admin1,Admin,Activate
+AS32/00012/24,39094893,Student,Activate
+AS32/00013/24,39094893,Student,Activate
+CB12/00012/24,1234567890,Student,Activate
+computing001,123456,cod,Activate
+deanstudent1,teacher123*,daen,Activate
+lib001,1234567890,librarian,Activate
+Medic001,1234567890,medical,Activate
+Opiyo,student@123*,admissions,Activate
+staff1@gmail.com,teacher123*,lecturer,Activate
